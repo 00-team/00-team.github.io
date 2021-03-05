@@ -4,6 +4,19 @@
     user-select: none;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #111;
+    border-radius: 20px;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
