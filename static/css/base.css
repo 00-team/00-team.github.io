@@ -71,3 +71,15 @@ header {
     left: 170px;
     font-size: 18px;
 }
+
+
+/* 404 page */
+
+.back-main {
+    color: #FFF;
+    font-family: 'Graduate', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 100px;
+    font-size: 20px;
+}
