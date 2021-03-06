@@ -1,1 +1,2 @@
 source: docs
+disable_disk_cache: true
