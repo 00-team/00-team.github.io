@@ -1,34 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>00 Team</title>
+---
+title: Home
+layout: base
+style_file: home
+video_player: true
+---
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet"> <!-- 00 Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    
-    <!-- Local Styles -->
-    <link rel="stylesheet" href="static/css/base.css">
+<header>
+    <span class="logo-base">00<span class="team-span">Team</span></span>
+</header>
 
-    <!-- jquery cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <!-- Page icon -->
-    <link rel="icon" href="static/images/logo2.png">
-</head>
-<body>
-    <header>
-        <span class="lzXgeCVgoGvP">00<span class="lzXgeCVgoGvP-team">Team</span></span>
-    </header>
-    <div class="uOEwqjKjUNzZ">
+<div class="conects">
+    <div class="about">
         <h2>About</h2>
         <p>Nothing ...</p>
     </div>
 
-    <script src="static/js/base.js"></script>
-</body>
-</html>
+    <div class="works">
+        <h2>Works</h2>
+        {% assign last_work = site.data.works[-1] %}
+        {% if last_work %}
+        <div class="last-work">
+            <h3>{{ last_work.title }}</h3>
+            <div class="video">
+                <video id="player" controls data-poster="{{ last_work.video_poster }}">
+                    <source src="{{ last_work.video_src }}" type="video/mp4" />
+                </video>
+                <script>const player = new Plyr('#player');</script>
+            </div>
+            <p>{{ last_work.description }}</p>
+        </div>
+        {% else %}
+        <h3 class="no-work">Noting for Now</h3>
+        {% endif %}
+        
+    </div>
+    <span></span>
+</div>
