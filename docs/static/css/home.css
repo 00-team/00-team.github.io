@@ -1,0 +1,93 @@
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-base {
+    font-size: 40vh;
+    color: #FFF;
+    font-family: 'Graduate', sans-serif;
+    display: grid
+}
+
+.logo-base .team-span {
+    font-size: 15vh;
+    text-transform: uppercase;
+}
+
+.conects {
+    position: relative;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    min-height: 50vh;
+    margin-top: 100px;
+}
+
+.conects .about {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 300px;
+}
+
+.conects .about h2 {
+    font-size: 40px;
+    margin-left: 10vw;
+    text-align: left;
+    font-family: 'Graduate', sans-serif;
+}
+
+
+.conects .about p {
+    text-align: left;
+    padding: 20px;
+    max-width: 70%;
+    font-size: 18px;
+    margin-left: 7vw;
+}
+
+.conects .works {
+    margin-bottom: 200px;
+}
+.conects .works h2 {
+    font-size: 40px;
+    margin-left: 10vw;
+    text-align: left;
+    font-family: 'Graduate', sans-serif;
+}
+
+.conects .works .last-work h3 {
+    font-family: 'Graduate', sans-serif;
+    font-size: 25px;
+}
+.conects .works .last-work .video {
+    width: 60%;
+    overflow: hidden;
+    border-radius: 10px;    
+    --plyr-color-main: #782FEF;
+    margin: 30px auto;
+}
+.conects .works .last-work p {
+    padding: 20px;
+    max-width: 70%;
+    font-size: 18px;
+    margin: 0 auto 100px;
+}
+
+
+.conects .works .no-work {
+    padding: 20px;
+    font-size: 18px;
+    margin-left: 15vw;
+    text-align: left;
+}
+
+@media (max-width:900px) {
+    .conects .works .last-work .video {
+        width: 95%;
+    }
+}
