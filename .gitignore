@@ -5,3 +5,6 @@ _site/
 .jekyll-metadata
 Gemfile
 Gemfile.lock
+
+# run
+local-run.bat
