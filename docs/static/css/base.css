@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* user-select: none; */
-    
+    box-sizing: border-box;
 }
 
 h2,h3,h4 {
@@ -20,6 +19,11 @@ h2,h3,h4 {
 ::-webkit-scrollbar-thumb {
     background-color: #111;
     border-radius: 20px;
+}
+
+::selection {
+    background: #FFF;
+    color: #000;
 }
 
 body {

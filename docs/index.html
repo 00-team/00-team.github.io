@@ -15,22 +15,23 @@ video_player: true
         <p>Nothing ...</p>
     </div>
 
-    <div class="works">
-        <h2>Works</h2>
-        {% assign last_work = site.data.works[-1] %}
-        {% if last_work %}
-        <div class="last-work">
-            <h3>{{ last_work.title }}</h3>
+    <div class="projects">
+        <h2>Projects</h2>
+        {% assign last_project = site.data.projects[-1] %}
+        {% if last_project %}
+        <div class="last-project">
+            <h3>{{ last_project.title }}</h3>
             <div class="video">
-                <video id="player" controls data-poster="{{ last_work.video_poster }}">
-                    <source src="{{ last_work.video_src }}" type="video/mp4" />
+                <video id="player" controls data-poster="{{ last_project.video_poster }}">
+                    <source src="{{ last_project.video_src }}" type="video/mp4" />
                 </video>
                 <script>const player = new Plyr('#player');</script>
             </div>
-            <p>{{ last_work.description }}</p>
+            <p>{{ last_project.description }}</p>
+            <a href="/projects/">See More Projects 	&gt;&gt;&gt;</a>
         </div>
         {% else %}
-        <h3 class="no-work">Noting for Now</h3>
+        <h3 class="no-project">Noting for Now</h3>
         {% endif %}
         
     </div>

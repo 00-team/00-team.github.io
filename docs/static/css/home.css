@@ -4,6 +4,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 
 .logo-base {
@@ -50,36 +51,48 @@ header {
     margin-left: 7vw;
 }
 
-.conects .works {
+.conects .projects {
     margin-bottom: 200px;
 }
-.conects .works h2 {
+
+.conects .projects h2 {
     font-size: 40px;
     margin-left: 10vw;
     text-align: left;
     font-family: 'Graduate', sans-serif;
 }
 
-.conects .works .last-work h3 {
+.conects .projects .last-project h3 {
     font-family: 'Graduate', sans-serif;
     font-size: 25px;
 }
-.conects .works .last-work .video {
+.conects .projects .last-project .video {
     width: 60%;
     overflow: hidden;
     border-radius: 10px;    
     --plyr-color-main: #782FEF;
     margin: 30px auto;
 }
-.conects .works .last-work p {
+.conects .projects .last-project p {
     padding: 20px;
     max-width: 70%;
     font-size: 18px;
     margin: 0 auto 100px;
 }
 
+.conects .projects .last-project a {
+    color: #58a6ff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 500ms;
+}
 
-.conects .works .no-work {
+.conects .projects .last-project a:hover {
+    text-decoration: underline;
+}
+
+.conects .projects .no-project {
     padding: 20px;
     font-size: 18px;
     margin-left: 15vw;
@@ -87,7 +100,7 @@ header {
 }
 
 @media (max-width:900px) {
-    .conects .works .last-work .video {
+    .conects .projects .last-project .video {
         width: 95%;
     }
 }
