@@ -24,6 +24,7 @@
     
     <!-- Local Styles -->
     <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
     {% if page.style_file %}
     <link rel="stylesheet" href="/static/css/{{ page.style_file }}.css">
     {% endif %}
@@ -48,7 +49,7 @@
 </head>
 <body>
     {{ content }}
-
+    {% include footer.html %}
     <script src="/static/js/base.js"></script>
 </body>
 </html>
