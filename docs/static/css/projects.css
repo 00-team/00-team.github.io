@@ -34,6 +34,7 @@
 .btns {
     display: inline-block;
     vertical-align: middle;
+    margin-bottom: 300px;
 }
 
 .btns .btn {
