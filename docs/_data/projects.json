@@ -4,5 +4,11 @@
         "video_src":"https://cdn.discordapp.com/attachments/612437290484105227/818007899460337684/New_video2_.mp4",
         "video_poster":"https://cdn.discordapp.com/attachments/745708329019375697/818009386286448680/Screenshot_209.png",
         "description":"A FiveM resource that shows the speed and information of the car"
+    },
+    {
+        "title":"FiveM Player HUD",
+        "video_src":"https://file.coffee/u/BQ9GY4jylr.mp4",
+        "video_poster":"https://file.coffee/u/wJSczT9ZXD.png",
+        "description":"A FiveM resource that shows the Health and information of the Player"
     }
 ]
