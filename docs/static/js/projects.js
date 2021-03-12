@@ -1,6 +1,13 @@
 var onslide = 1;
 show_slide();
 
+function pause_videos() {
+    var video_tags = document.getElementsByTagName("video");
+    for (let v of video_tags) {
+        v.pause();
+    }
+}
+
 function show_slide() {
     let slides = document.getElementsByClassName("slide");
     if (!slides) return;
@@ -21,10 +28,12 @@ $(".previous").click(function() {
     if (this.getAttribute("disabled")) return;
     onslide -= 1;
     show_slide();
+    pause_videos();
 });
 
 $(".next").click(function() {
     if (this.getAttribute("disabled")) return;
     onslide += 1;
     show_slide();
+    pause_videos();
 });
