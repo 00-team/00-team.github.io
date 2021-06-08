@@ -1,0 +1,44 @@
+{
+  "name": "00-team.github.io",
+  "version": "1.0.0",
+  "description": "00 Team Page",
+  "main": "App.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch ./src/App.js -o ./static/js/",
+    "build": "webpack --mode production ./src/App.js -o ./static/js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/00-team/00-team.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/00-team/00-team.github.io/issues"
+  },
+  "homepage": "https://github.com/00-team/00-team.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-redux": "^7.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-transition-group": "^4.4.2",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0"
+  }
+}
