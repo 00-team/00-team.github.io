@@ -4,7 +4,7 @@
   "description": "00 Team Page",
   "main": "App.js",
   "scripts": {
-    "dev": "webpack --mode development --watch ./src/App.js -o ./static/js/",
+    "dev": "webpack --mode development --watch ./src/App.js -o ./static/dev/",
     "build": "webpack --mode production ./src/App.js -o ./static/js/"
   },
   "repository": {
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/00-team/00-team.github.io/issues"
   },
-  "homepage": "https://github.com/00-team/00-team.github.io#readme",
+  "homepage": "https://00-team.github.io/",
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
@@ -25,8 +25,7 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "webpack": "^5.37.1",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-cli": "^4.7.0"
   },
   "dependencies": {
     "prop-types": "^15.7.2",

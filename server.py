@@ -3,7 +3,7 @@ import httpwatcher
 
 httpwatcher.watch(
     './', 
-    watch_paths=['./static/js/','./static/css/'], 
+    watch_paths=['./static/dev/','./static/css/'], 
     on_reload=None, 
     host='localhost', 
     port=9000, 
