@@ -16,5 +16,11 @@
         "video_src":"https://file.coffee/u/Th0Co_NeCB.mp4",
         "video_poster":"https://file.coffee/u/GX_svqeoB6.png",
         "description":"A FiveM resource that shows the Player Counts and information of the Server"
+    },
+    {
+        "title":"FiveM HUD",
+        "video_src":"https://cdn.discordapp.com/attachments/858674751064637440/859774727380140032/Basic_Hud-1.mp4",
+        "video_poster":"https://cdn.discordapp.com/attachments/860048420253204491/860048685386825768/Screenshot_31.png",
+        "description":"A FiveM resource that shows the Player Data like"
     }
 ]
